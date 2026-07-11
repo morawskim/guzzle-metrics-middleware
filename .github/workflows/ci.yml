@@ -68,7 +68,7 @@ jobs:
       - name: "Run phpunit"
         run: |
           echo Xdebug env - ${{ matrix.xdebug }}
-          if [[ "${{ matrix.xdebug }}" == "xdebug" ]]; then php -dxdebug.mode=coverage vendor/bin/phpunit --verbose --coverage-clover=coverage.xml; fi
+          if [[ "${{ matrix.xdebug }}" == "xdebug" ]]; then php -dxdebug.mode=coverage vendor/bin/phpunit --coverage-clover=coverage.xml; fi
       - uses: codecov/codecov-action@0fb7174895f61a3b6b78fc075e0cd60383518dac #v5
         with:
           fail_ci_if_error: false
