@@ -1,0 +1,30 @@
+{
+    "name": "mmo/guzzle-metrics-middleware",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mmo\\GuzzleMiddleware\\Metrics\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mmo\\GuzzleMiddleware\\MetricsTest\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marcin Morawski",
+            "email": "marcin@morawskim.pl"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.3.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "promphp/prometheus_client_php": "^2.15",
+        "phpunit/phpunit": "^12.0"
+    }
+}
